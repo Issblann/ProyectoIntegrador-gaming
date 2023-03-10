@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  // background: wheat;
+  height: 65px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+
+  .container__logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    span {
+      font-weight: 800;
+      font-size: 20px;
+      color: #00609d;
+      margin-left: 40px;
+      @media (max-width: 684px) {
+        margin-left: unset;
+      }
+    }
+  }
+
+  .navegador {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .navegador__list {
+      display: flex;
+      gap: 30px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: unset;
+      @media (max-width: 684px) {
+        gap: 5px;
+        font-size: 13px;
+      }
+      // @media (max-width: 638px) {
+      //   gap: 10px;
+      //   font-size: 10px;
+      // }
+      .navegador__link {
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .button__register {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 638px) {
+      display: none;
+    }
+    .register {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 95px;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  gap: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__principal {
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  // background: gray;
+  padding: 20px;
+  .container__info {
+    // background: pink;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    gap: 20px;
+    h1 {
+      padding: 10px;
+      font-weight: 800;
+      font-size: 70px;
+      @media (max-width: 576px) {
+        font-size: 50px;
+      }
+    }
+    p {
+      padding: 10px;
+      color: #78767b;
+    }
+
+    .learn-more {
+      background: #00609d;
+      color: white;
+      margin-top: 5px;
+    }
+
+    .companies {
+      //   background: red;
+      width: 100%;
+      display: flex;
+      gap: 25px;
+      img {
+        // background: purple;
+        width: auto;
+        height: 75px;
+      }
+    }
+  }
+
+  .container-img {
+    // background: plum;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.btn {
+  background: black;
+  text-decoration: none;
+  color: white;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  transition: all 0.5s;
+  &:hover {
+    transition: all 0.5s;
+    letter-spacing: 2px;
+    width: 160px;
+    background: black;
+    color: white;
+  }
+}
+.container__cards {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  // max-width: 1600px;
+  height: 100%;
+  padding: 40px;
+  flex-direction: column;
+  background: #00609d;
+  h1 {
+    text-align: center;
+    font-weight: 800;
+    padding: 20px;
+    font-size: 35px;
+    color: white;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 572px) {
+      flex-direction: column;
+    }
+    .card {
+      border: none;
+      // img {
+      //   height: 500px;
+      //   width: 500px;
+      // }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container__principal {
+    flex-wrap: wrap;
+    height: 100%;
+    .container__info {
+      width: 100%;
+    }
+    .container-img {
+      width: 100%;
+    }
+  }
+}
